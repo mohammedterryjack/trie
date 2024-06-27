@@ -5,11 +5,11 @@ turn a list of labels into a tree
 ```
 
 ```
-                  ┌1
-    ┌example label┤ 
-    │             └2
-JSON┤               
+                  ┌1 .
+    ┌example label┤   
+    │             └2 .
+JSON┤                 
     │             ┌.
     └another label┤ 
-                  └again
+                  └again .
 ```
