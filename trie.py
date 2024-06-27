@@ -3,7 +3,7 @@ from PrettyPrint import PrettyPrintTree
 from json import dumps
 
 def pad_punctuation(text:str) -> str:
-    return text.translate(str.maketrans({key: " {0} ".format(key) for key in punctuation}))
+    return text.translate(str.maketrans({key: " {0} ".format(key) for key in punctuation})) + " ."
 
 def make_trie(names:list[str]) -> dict:
     root = dict()
