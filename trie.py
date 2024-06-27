@@ -38,7 +38,7 @@ def list_to_trie(labels:list[str]) -> dict:
     return simplify_trie(trie=trie)
 
 pprint_tree = PrettyPrintTree(orientation=PrettyPrintTree.Horizontal, color='')
-tree = list_to_trie(labels=["example label", "example label 2", "another label", "another label again"])
+tree = list_to_trie(labels=["example label 1", "example label 2", "another label )", "another label again"])
 repr = pprint_tree.print_json(tree, return_instead_of_print=True)
 with open('tree.txt','w') as f:
     f.write(repr)
